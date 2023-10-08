@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -20,12 +20,18 @@
         <nav>
             <a href="#" class="logo">Salaja<span>Coffee</span></a>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Kontak</a></li>
                 </li>
             </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <section id="home" class="hero">
             <div class="content">
@@ -33,6 +39,10 @@
                 <p>Selamat datang di perjalanan unik melalui aroma dan cita rasa kopi yang memikat. Temukan keindahan di setiap tegukan dan rasakan sentuhan kehangatan dari secangkir kopi yang penuh inspirasi.
                 </p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
+                <div class="container-download-app">
+                    <img src="./assets/img/App Store.png" alt="App Store">
+                    <img src="./assets/img/Play Store.png" alt="Play Store">
+                </div>
             </div>
         </section>
     </header>
@@ -40,31 +50,39 @@
         <div id="content">
             <article id="about">
                 <div class="container-heading">
-                    <h1>Tentang</h1>
+                    <h2>Tentang</h2>
                 </div>
                 <div class="container-about">
-                    <img src="./assets/img/img-tentang-1.jpg" alt="Image Tentang 1">
-                    <div class="about-text-1">
-                        <h2>Selamat Datang di SalajaCoffee</h2>
-                        <p>Kami adalah para pecinta kopi yang bersemangat, dan kami percaya bahwa setiap cangkir kopi memiliki cerita tersendiri. Dari biji kopi yang dipilih dengan teliti hingga proses roasting yang cermat, kami berkomitmen untuk membawa
-                            pengalaman kopi terbaik kepada Anda.<br><br>Dalam setiap tegukan, kami ingin mengantarkan Anda pada perjalanan rasa yang mengagumkan. Kami memahami bahwa kopi bukan hanya minuman, melainkan sebuah kehidupan yang dihidangkan
-                            dalam cangkir. Itulah mengapa kami menekankan kualitas dan keaslian dalam setiap produk kami.<br><br>Berkorbanlah dengan kualitas adalah moto kami. Kami bekerja sama dengan petani kopi terbaik Nusantara untuk memastikan biji
-                            kopi kami diperoleh secara adil dan berkelanjutan. Dengan memprioritaskan etika, kami menciptakan kemitraan yang menghargai pekerja keras para petani dan mendorong praktik budidaya ramah lingkungan.</p>
+                    <div class="about-image">
+                        <img src="./assets/img/img-tentang-1.jpg" alt="Image Tentang 1">
+                    </div>
+                    <div class="about-text">
+                        <h3>Awal Merintis</h3>
+                        <p>Salaja Coffee adalah coffe shop pertama dari Sila, Bima. Didirikan oleh seorang anak muda pada April 2017. Awal memulai bisnis ini di sebuah bangunan kontrakan sederhana di Jalan Lintas Sumbawa-Bima.</p>
                     </div>
                 </div>
                 <div class="container-about">
-                    <div class="about-text-2">
-                        <p>Selain itu, di SalajaCoffee, kami ingin membangun komunitas pecinta kopi yang kuat. Kami ingin berbagi pengetahuan, pengalaman, dan kegembiraan seputar kopi dengan Anda semua. Dalam setiap cangkir kopi, kami harap Anda merasakan
-                            rasa persatuan dan kebersamaan yang kami bangun melalui cinta kami terhadap kopi.<br><br>Terima kasih telah bergabung dengan kami dalam perjalanan kopi kami. Mari nikmati keindahan setiap cangkir kopi bersama-sama!<br><br>Salam
-                            hangant,
-                            <br>Tim SalajaCoffee.</p>
+                    <!-- mobile view start -->
+                    <div id="for-mobile" class="about-image" hidden>
+                        <img src="./assets/img/img-tentang-2.jpg" alt="Image Tentang 2">
                     </div>
-                    <img src="./assets/img/img-tentang-2.jpg" alt="Image Tentang 2">
+                    <!-- mobile view end -->
+                    <div class="about-text ">
+                        <h3>Latar Belakang</h3>
+                        <p>Coffee shop ini berawal dari hasrat mendalam sang pendiri terhadap kopi dan keinginan untuk menciptakan tempat di mana orang bisa merasakan kenikmatan unik dari setiap cangkir kopi. Terinspirasi oleh pengalaman perjalanan dan eksplorasi
+                            berbagai budaya kopi, sang pendiri ingin berbagi keajaiban kopi dengan komunitas lokal. Dengan keyakinan pada kualitas bahan dan layanan yang ramah, coffee shop ini lahir untuk menyajikan kopi berkualitas tinggi dan memberikan
+                            pengalaman yang memikat bagi para pecinta kopi.</p>
+                    </div>
+                    <!-- desktop view start -->
+                    <div id="for-desktop" class="about-image">
+                        <img src="./assets/img/img-tentang-2.jpg" alt="Image Tentang 2" class="image-2">
+                    </div>
+                    <!-- desktop view end -->
                 </div>
             </article>
             <article id="menu">
                 <div class="container-heading">
-                    <h1>Menu</h1>
+                    <h2>Menu</h2>
                 </div>
                 <div class="container-menu">
                     <div class="slider-wrapper">
@@ -99,17 +117,17 @@
             </article>
             <article id="contact">
                 <div class="container-heading">
-                    <h1>Kontak</h1>
+                    <h2>Kontak</h2>
                 </div>
                 <div class="container-contact">
-                    <div class="container-contact-us">
-                        <h3 class="container-heading">Kontak Kami</h3>
-                        <p>Telp: (021) 1234567</p>
-                        <p>Email: salajacoffee@example.com</p>
-                        <p>Alamat: Jl. Lintas Sumbawa-Bima, Desa Timu, Kec. Bolo, Kab. Bima, NTB</p>
+                    <div class="container-location-message">
+                        <h4>Lokasi Kami</h4>
+                        <p>Jl. Lintas Sumbawa-Bima, Desa Timu, Kec. Bolo, Kab. Bima, NTB</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.9138933402996!2d118.6278227746523!3d-8.507741486137247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dca77f679ce0c0b%3A0xc5691c5e431b71!2ssalaja%20coffee!5e0!3m2!1sid!2sid!4v1696479674486!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="our-location"></iframe>
                     </div>
-                    <div class="container-message">
-                        <!-- <h3 class="container-heading">Kirim Pesan</h3> -->
+                    <div class="container-location-message">
+                        <h4>Hubungi Kami</h4>
                         <form action=" #" method="post">
                             <label for="name">Nama</label>
                             <input type="text" id="name" name="name" placeholder="Masukan Nama Anda" required>
@@ -128,7 +146,7 @@
         </div>
         <aside id="biodata">
             <div class="container-heading">
-                <h1>Biodata</h1>
+                <h2>Biodata</h2>
             </div>
             <div class="container-biodata">
                 <div class="social-media">
@@ -142,7 +160,7 @@
                         <img src="./assets/img/img-biodata.jpg" alt="Profile Picture">
                     </div>
                     <div class="info">
-                        <h2>Muhammad Ikhsan</h2>
+                        <h3>Muhammad Ikhsan</h3>
                         <p>Tanggal Lahir: Bima, 19 April 2001</p>
                         <p>Alamat: Jl. Pringgodani No.139B, Sleman</p>
                         <p>Email: nama@example.com</p>
@@ -161,6 +179,42 @@
     </Footer>
 
     <script>
+        /* hamburger menu */
+
+        const menuAbout = document.getElementById('about');
+        const menuMenu = document.getElementById('menu');
+        const menuContact = document.getElementById('contact');
+
+
+        /* const aboutMob = false; */
+
+        function updateDisp() {
+            isMobile = window.innerWidth < 768;
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const navBar = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function() {
+                navBar.classList.toggle('slide');
+            });
+
+            /* for mobile display */
+            if (isMobile) {
+                document.getElementById('for-desktop').hidden = true;
+                document.getElementById('for-mobile').hidden = false;
+                console.log('isMobile');
+            } else {
+                document.getElementById('for-desktop').hidden = false;
+                document.getElementById('for-mobile').hidden = true;
+                console.log('isDesktop');
+            }
+        }
+        updateDisp();
+        window.addEventListener("resize", updateDisp);
+
+
+
+
+
         const initSlider = () => {
             const imageList = document.querySelector(".slider-wrapper .image-list");
             const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
