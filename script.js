@@ -93,6 +93,14 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
+// redirect to all menu page
+function redirect() {
+    window.location.href = 'menu.html';
+}
+document.getElementById('all-menu').onclick = function() {
+    redirect();
+};
+
 //back to top button
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
