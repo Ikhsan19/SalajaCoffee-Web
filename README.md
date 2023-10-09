@@ -7,4 +7,5 @@ This website was created for the assignment of the "Learning Basic Web Programmi
    - All Menu: https://www.couvee.co.id/menu/
 
 Design using Figma: https://www.figma.com/file/4XbJgzTMlFEFdJdB7xhRW1/Salaja-Coffee-App?type=design&node-id=0%3A1&mode=design&t=EsFA6gkYVl3k9tAf-1
+
 Visit Site: https://ikhsan19.github.io/SalajaCoffee-Web/
