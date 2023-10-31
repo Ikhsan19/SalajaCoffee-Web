@@ -1,4 +1,4 @@
-This website was created for the assignment of the "Learning Basic Web Programming" class from the Dicoding Indonesia online course platform.
+This website was created for the assignment of the "Belajar Dasar Pemrograman Web" class from the Dicoding Indonesia online course platform.
 
 1. About page reference from Couvee
    - Layout: https://www.couvee.co.id/story/
